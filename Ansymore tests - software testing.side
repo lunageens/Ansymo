@@ -1,0 +1,149 @@
+{
+  "id": "ce18cd1b-f522-4a96-84a7-a347b8c5ce95",
+  "version": "2.0",
+  "name": "Ansymore tests - software testing",
+  "url": "https://ansymore.uantwerpen.be/",
+  "tests": [{
+    "id": "f766be4b-45ed-4d5d-835a-60bdaea6421d",
+    "name": "hello world (ex 1)",
+    "commands": [{
+      "id": "6071635c-2f9e-4364-b75f-f9cd52606714",
+      "comment": "",
+      "command": "open",
+      "target": "https://ansymore.uantwerpen.be/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "baf3b89e-bce1-4c07-87e5-e09f2b0780a6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1042x697",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e254f69-a800-4437-891e-8e1f4462aed7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Courses",
+      "targets": [
+        ["linkText=Courses", "linkText"],
+        ["css=.menu-2298 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Courses')]", "xpath:link"],
+        ["xpath=//ul[@id='nice-menu-1']/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38d8337b-cd4d-427d-a851-18093add95c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.views-row-7 h2",
+      "targets": [
+        ["css=.views-row-7 h2", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div[7]/div/span/a/h2", "xpath:idRelative"],
+        ["xpath=//div[7]/div/span/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Software Testing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "65b2bebb-c271-45ba-9b6c-a64b009948e3",
+    "name": "hello world (ex 2)",
+    "commands": [{
+      "id": "d88bb947-d96b-4b8c-945c-e4f86455a1b9",
+      "comment": "",
+      "command": "open",
+      "target": "https://ansymore.uantwerpen.be/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbada707-f7d4-4179-b73e-6142a178eb44",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1042x697",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c1e9b4d-ec59-4b11-b0c6-b87b2275c91c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=container",
+      "targets": [
+        ["id=container", "id"],
+        ["css=#container", "css:finder"],
+        ["xpath=//div[@id='container']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": "300000"
+    }, {
+      "id": "54183e35-f97a-4d9c-a3a8-6306b820a252",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Courses",
+      "targets": [
+        ["linkText=Courses", "linkText"],
+        ["css=.menu-2298 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Courses')]", "xpath:link"],
+        ["xpath=//ul[@id='nice-menu-1']/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94cda4e6-0895-4db0-ae49-263c184c2548",
+      "comment": "",
+      "command": "click",
+      "target": "css=.views-row-7 h2",
+      "targets": [
+        ["css=.views-row-7 h2", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div[7]/div/span/a/h2", "xpath:idRelative"],
+        ["xpath=//div[7]/div/span/a/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Software Testing')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c140ccb-16de-4d73-b81b-529860c9c5f9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='content']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Software Testing')]", "xpath:innerText"]
+      ],
+      "value": "Software Testing"
+    }, {
+      "id": "9c1a5332-e934-4fef-9345-09b253209154",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.field-professor-linked",
+      "targets": [
+        ["css=.field-professor-linked", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Professor: Serge Demeyer"
+    }, {
+      "id": "99f55d89-2479-4fba-b3ca-0f874603339e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.field-assistants-linked > div",
+      "targets": [],
+      "value": "Assistants: Mutlu Beyazıt, Onur Kilincceker"
+    }]
+  }],
+  "suites": [{
+    "id": "ef5ab0b4-c478-48ed-9064-afbf5eba8fc0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f766be4b-45ed-4d5d-835a-60bdaea6421d"]
+  }],
+  "urls": ["https://ansymore.uantwerpen.be/"],
+  "plugins": []
+}
