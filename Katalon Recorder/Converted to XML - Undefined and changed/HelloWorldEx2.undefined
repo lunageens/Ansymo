@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCase>
+<selenese>
+	<command>open</command>
+	<target><![CDATA[https://ansymore.uantwerpen.be/]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>waitForPageToLoad</command>
+	<target><![CDATA[30000]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>click</command>
+	<target><![CDATA[linkText=Courses]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>waitForPageToLoad</command>
+	<target><![CDATA[30000]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>click</command>
+	<target><![CDATA[linkText='Software Testing']]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>waitForPageToLoad</command>
+	<target><![CDATA[30000]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>verifyText</command>
+	<target><![CDATA[css=h1]]></target>
+	<value><![CDATA[Software Testing]]></value>
+</selenese>
+<selenese>
+	<command>verifyText</command>
+	<target><![CDATA[xpath=//div[@id='content']/div[2]/div/div/div/div/a]]></target>
+	<value><![CDATA[Serge Demeyer]]></value>
+</selenese>
+<selenese>
+	<command>verifyText</command>
+	<target><![CDATA[xpath=//div[@id='content']/div[2]/div/div/div/div[2]/div]]></target>
+	<value><![CDATA[Assistants: Mutlu Beyazıt, Onur Kilincceker]]></value>
+</selenese>
+</TestCase>

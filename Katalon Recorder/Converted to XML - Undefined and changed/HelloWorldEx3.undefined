@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCase>
+<selenese>
+	<command>open</command>
+	<target><![CDATA[https://ansymore.uantwerpen.be/]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>waitForPageToLoad</command>
+	<target><![CDATA[30000]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>click</command>
+	<target><![CDATA[linkText=Courses]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>waitForPageToLoad</command>
+	<target><![CDATA[30000]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>storeEval</command>
+	<target><![CDATA[1]]></target>
+	<value><![CDATA[index]]></value>
+</selenese>
+<selenese>
+	<command>while</command>
+	<target><![CDATA[index < 8]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>click</command>
+	<target><![CDATA[css=.views-row-${index} h2]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>waitForPageToLoad</command>
+	<target><![CDATA[30000]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>verifyVisible</command>
+	<target><![CDATA[xpath=//body]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>assertElementPresent</command>
+	<target><![CDATA[css=div.field.field-professor-linked]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>goBack</command>
+	<target><![CDATA[]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>waitForPageToLoad</command>
+	<target><![CDATA[30000]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>storeEval</command>
+	<target><![CDATA[${index} + 1]]></target>
+	<value><![CDATA[index]]></value>
+</selenese>
+<selenese>
+	<command>endWhile</command>
+	<target><![CDATA[]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+</TestCase>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>Default Suite</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">hello world (ex 1)</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://ansymore.uantwerpen.be/<datalist><option>https://ansymore.uantwerpen.be/</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForPageToLoad</td><td>30000<datalist><option>https://ansymore.uantwerpen.be/</option><option></option><option>30000</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>linkText=Courses<datalist><option>linkText=Courses</option><option>css=.menu-2298 &gt; a</option><option>xpath=//a[contains(text(),'Courses')]</option><option>xpath=//ul[@id='nice-menu-1']/li[4]/a</option><option>xpath=//a[contains(@href, '/courses')]</option><option>xpath=//li[4]/a</option><option>xpath=//a[contains(.,'Courses')]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>linkText='Software Testing'<datalist><option>css=.views-row-7 h2</option><option>xpath=//div[@id='content']/div[2]/div/div[7]/div/span/a/h2</option><option>xpath=//div[7]/div/span/a/h2</option><option>xpath=//h2[contains(.,'Software Testing')]</option><option>linkText='Software Testing'</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">hello world (ex 2)</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://ansymore.uantwerpen.be/<datalist><option>https://ansymore.uantwerpen.be/</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForPageToLoad</td><td>30000<datalist><option>30000</option><option>https://ansymore.uantwerpen.be/</option><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>linkText=Courses<datalist><option>linkText=Courses</option><option>css=.menu-2298 &gt; a</option><option>xpath=//a[contains(text(),'Courses')]</option><option>xpath=//ul[@id='nice-menu-1']/li[4]/a</option><option>xpath=//a[contains(@href, '/courses')]</option><option>xpath=//li[4]/a</option><option>xpath=//a[contains(.,'Courses')]</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForPageToLoad</td><td>30000<datalist><option>30000</option><option>https://ansymore.uantwerpen.be/</option><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>linkText='Software Testing'<datalist><option>css=.views-row-7 h2</option><option>xpath=//div[@id='content']/div[2]/div/div[7]/div/span/a/h2</option><option>xpath=//div[7]/div/span/a/h2</option><option>xpath=//h2[contains(.,'Software Testing')]</option><option>linkText='Software Testing'</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForPageToLoad</td><td>30000<datalist><option>30000</option><option>https://ansymore.uantwerpen.be/</option><option></option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>css=h1<datalist><option>css=h1</option><option>xpath=//div[@id='content']/h1</option><option>xpath=//h1</option><option>xpath=//h1[contains(.,'Software Testing')]</option></datalist></td><td>Software Testing</td>
+</tr>
+<tr><td>verifyText</td><td>xpath=//div[@id='content']/div[2]/div/div/div/div/a<datalist><option>link=Serge Demeyer</option><option>xpath=//a[contains(text(),'Serge Demeyer')]</option><option>xpath=//div[@id='content']/div[2]/div/div/div/div/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Software Testing'])[2]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Assistants:'])[1]/preceding::a[1]</option><option>xpath=//*/text()[normalize-space(.)='Serge Demeyer']/parent::*</option><option>xpath=//a[contains(@href, 'https://ansymore.uantwerpen.be/people/serge-demeyer')]</option><option>xpath=//div[2]/div/div/div/div/a</option><option>css=div.field.field-professor-linked &gt; a</option><option>css=div.field.field-professor-linked &gt; a</option><option>css=div.field.field-professor-linked &gt; a</option><option>css=div.field.field-professor-linked &gt; a</option><option>css=div.field.field-professor-linked &gt; a</option></datalist></td><td>Serge Demeyer</td>
+</tr>
+<tr><td>verifyText</td><td>xpath=//div[@id='content']/div[2]/div/div/div/div[2]/div<datalist><option>xpath=//div[@id='content']/div[2]/div/div/div/div[2]/div</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Serge Demeyer'])[1]/following::div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Master Computer Science;&amp;nbsp;Period: 2nd semester 2022-2023'])[1]/preceding::div[1]</option><option>xpath=//*/text()[normalize-space(.)='Mutlu Beyazıt, Onur Kilincceker']/parent::*</option><option>xpath=//div[2]/div/div/div/div[2]/div</option><option>css=div.field.field-assistants-linked &gt; div</option><option>css=div.field.field-assistants-linked &gt; div</option><option>css=div.field.field-assistants-linked &gt; div</option><option>css=div.field.field-assistants-linked &gt; div</option><option>css=div.field.field-assistants-linked &gt; div</option></datalist></td><td>Assistants: Mutlu Beyazıt, Onur Kilincceker</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">hello world (ex 3)</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://ansymore.uantwerpen.be/<datalist><option>https://ansymore.uantwerpen.be/</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForPageToLoad</td><td>30000<datalist><option>30000</option><option>https://ansymore.uantwerpen.be/</option><option></option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>linkText=Courses<datalist><option>xpath=//ul[@id='nice-menu-1']/li[4]/a</option><option>linkText=Courses</option><option>css=.menu-2298 &gt; a</option><option>xpath=//a[contains(text(),'Courses')]</option><option>xpath=//a[contains(@href, '/courses')]</option><option>xpath=//li[4]/a</option><option>xpath=//a[contains(.,'Courses')]</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForPageToLoad</td><td>30000<datalist><option>30000</option><option>https://ansymore.uantwerpen.be/</option><option></option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>1<datalist><option>0</option><option>1</option><option>2</option></datalist></td><td>index</td>
+</tr>
+<tr><td>while</td><td>index &lt; 8<datalist><option>i &lt;= 7</option><option>{$i} &lt;= 7</option><option>${i} &lt;= 7</option><option>${index} &lt; 7</option><option>{$index} &lt; 7</option><option>index &lt; 7</option><option>index &lt; 8</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>css=.views-row-${index} h2<datalist><option>storeAllLinks[${index}]</option><option>linkTexts[${index}]</option><option>linkText = linkTexts[${index}]</option><option>css=.views-row-${index} h2</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForPageToLoad</td><td>30000<datalist><option>30000</option><option>https://ansymore.uantwerpen.be/</option><option></option></datalist></td><td></td>
+</tr>
+<tr><td>verifyVisible</td><td>xpath=//body<datalist><option>xpath=//body</option><option>css=body.sidebar-left</option></datalist></td><td></td>
+</tr>
+<tr><td>assertElementPresent</td><td>css=div.field.field-professor-linked<datalist><option>xpath=//div[@id='content']/div[2]/div/div/div/div</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Model Driven Engineering'])[2]/following::div[5]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Model Driven Engineering'])[1]/following::div[5]</option><option>xpath=//div/div[2]/div/div/div/div</option><option>css=div.field.field-professor-linked</option><option>xpath=//div[@id='content']/div[${index}]/div/div/div/div</option><option>xpath=//div[@id='content']/div[2]/div/div/div/a</option></datalist></td><td></td>
+</tr>
+<tr><td>goBack</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+<tr><td>waitForPageToLoad</td><td>30000<datalist><option>30000</option><option>https://ansymore.uantwerpen.be/</option><option></option></datalist></td><td></td>
+</tr>
+<tr><td>storeEval</td><td>${index} + 1<datalist><option>${index} + 1</option></datalist></td><td>index</td>
+</tr>
+<tr><td>endWhile</td><td><datalist><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

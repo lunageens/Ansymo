@@ -45,7 +45,15 @@ public class Helloworldex2Test {
       wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("container")));
     }
     driver.findElement(By.linkText("Courses")).click();
+    {
+      WebDriverWait wait = new WebDriverWait(driver, 300);
+      wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("container")));
+    }
     driver.findElement(By.cssSelector(".views-row-7 h2")).click();
+    {
+      WebDriverWait wait = new WebDriverWait(driver, 300);
+      wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("container")));
+    }
     assertThat(driver.findElement(By.cssSelector("h1")).getText(), is("Software Testing"));
     assertThat(driver.findElement(By.cssSelector(".field-professor-linked")).getText(), is("Professor: Serge Demeyer"));
     assertThat(driver.findElement(By.cssSelector(".field-assistants-linked > div")).getText(), is("Assistants: Mutlu Beyazıt, Onur Kilincceker"));

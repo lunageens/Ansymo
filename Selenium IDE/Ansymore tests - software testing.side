@@ -66,7 +66,7 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "1c1e9b4d-ec59-4b11-b0c6-b87b2275c91c",
+      "id": "8efe543f-bf2f-41b7-a545-5372a4356ceb",
       "comment": "",
       "command": "waitForElementVisible",
       "target": "id=container",
@@ -93,6 +93,18 @@
       ],
       "value": ""
     }, {
+      "id": "68a7a27c-b8a9-4e14-b080-a5381a792f75",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=container",
+      "targets": [
+        ["id=container", "id"],
+        ["css=#container", "css:finder"],
+        ["xpath=//div[@id='container']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": "300000"
+    }, {
       "id": "94cda4e6-0895-4db0-ae49-263c184c2548",
       "comment": "",
       "command": "click",
@@ -104,6 +116,18 @@
         ["xpath=//h2[contains(.,'Software Testing')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "1c1e9b4d-ec59-4b11-b0c6-b87b2275c91c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=container",
+      "targets": [
+        ["id=container", "id"],
+        ["css=#container", "css:finder"],
+        ["xpath=//div[@id='container']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": "300000"
     }, {
       "id": "9c140ccb-16de-4d73-b81b-529860c9c5f9",
       "comment": "",

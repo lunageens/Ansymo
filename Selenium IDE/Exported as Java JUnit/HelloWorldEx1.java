@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys;
 import java.util.*;
 import java.net.MalformedURLException;
 import java.net.URL;
-public class HelloworldTest {
+public class Helloworldex1Test {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
@@ -37,7 +37,10 @@ public class HelloworldTest {
     driver.quit();
   }
   @Test
-  public void helloworld() {
-    driver.findElement(By.linkText("Software Testing (Master)")).click();
+  public void helloworldex1() {
+    driver.get("https://ansymore.uantwerpen.be/");
+    driver.manage().window().setSize(new Dimension(1042, 697));
+    driver.findElement(By.linkText("Courses")).click();
+    driver.findElement(By.cssSelector(".views-row-7 h2")).click();
   }
 }

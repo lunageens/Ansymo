@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCase>
+<selenese>
+	<command>open</command>
+	<target><![CDATA[https://ansymore.uantwerpen.be/]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>waitForPageToLoad</command>
+	<target><![CDATA[30000]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>click</command>
+	<target><![CDATA[linkText=Courses]]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+<selenese>
+	<command>click</command>
+	<target><![CDATA[linkText='Software Testing']]></target>
+	<value><![CDATA[]]></value>
+</selenese>
+</TestCase>
