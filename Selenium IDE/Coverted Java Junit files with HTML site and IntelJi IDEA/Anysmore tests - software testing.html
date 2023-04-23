@@ -94,5 +94,79 @@
     </tr>
     </tbody>
 </table>
+<table cellpadding="1" cellspacing="1" border="1">
+    <thead>
+    <tr>
+        <td rowspan="1" colspan="3">Ansymore tests - software testing - hello world (ex 3)</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>executeScript</td>
+        <td>var indexes = [1,2,3,4,5,6,7]; return indexes;</td>
+        <td>indexes</td>
+    </tr>
+    <tr>
+        <td>forEach</td>
+        <td>indexes</td>
+        <td>index</td>
+    </tr>
+    <tr>
+        <td>open</td>
+        <td>https://ansymore.uantwerpen.be/</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>setWindowSize</td>
+        <td>1042x697</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>waitForElementVisible</td>
+        <td>id=container</td>
+        <td>300000</td>
+    </tr>
+    <tr>
+        <td>click</td>
+        <td>linkText=Courses</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>waitForElementVisible</td>
+        <td>id=container</td>
+        <td>300000</td>
+    </tr>
+    <tr>
+        <td>executeScript</td>
+        <td>return "//div["+ ${index} + "]/div/span/a/h2"</td>
+        <td>command</td>
+    </tr>
+    <tr>
+        <td>click</td>
+        <td>xpath=${command}</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>waitForElementVisible</td>
+        <td>id=container</td>
+        <td>300000</td>
+    </tr>
+    <tr>
+        <td>assertElementPresent</td>
+        <td>id=container</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>assertElementPresent</td>
+        <td>css=.field > a</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>end</td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>

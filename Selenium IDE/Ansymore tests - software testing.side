@@ -159,6 +159,132 @@
       "targets": [],
       "value": "Assistants: Mutlu Beyazıt, Onur Kilincceker"
     }]
+  }, {
+    "id": "afb08624-b9de-46f8-a288-1710bf35ac82",
+    "name": "hello world (ex 3)",
+    "commands": [{
+      "id": "144bac24-0688-4e2c-8a41-8b0293b49f59",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var indexes = [1,2,3,4,5,6,7]; return indexes;",
+      "targets": [],
+      "value": "indexes"
+    }, {
+      "id": "18a555e3-d623-4f61-80c0-e0362dae6116",
+      "comment": "",
+      "command": "forEach",
+      "target": "indexes",
+      "targets": [],
+      "value": "index"
+    }, {
+      "id": "df9ab11a-8d41-4a2c-9813-85074b08a532",
+      "comment": "",
+      "command": "open",
+      "target": "https://ansymore.uantwerpen.be/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a014a64-204b-4742-9fc5-f9a5a47ea299",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1042x697",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d72f10f7-9641-48e6-80a0-850b9a4d07fa",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=container",
+      "targets": [
+        ["id=container", "id"],
+        ["css=#container", "css:finder"],
+        ["xpath=//div[@id='container']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": "300000"
+    }, {
+      "id": "989b260a-7e28-4b91-8612-2f20f22c55c1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Courses",
+      "targets": [
+        ["linkText=Courses", "linkText"],
+        ["css=.menu-2298 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Courses')]", "xpath:link"],
+        ["xpath=//ul[@id='nice-menu-1']/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb3fc4d3-6451-42d4-b814-55e8bd97dde6",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=container",
+      "targets": [
+        ["id=container", "id"],
+        ["css=#container", "css:finder"],
+        ["xpath=//div[@id='container']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": "300000"
+    }, {
+      "id": "c940a3b4-65d0-4905-a7f1-52f81510e791",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"//div[\"+ ${index} + \"]/div/span/a/h2\"",
+      "targets": [],
+      "value": "command"
+    }, {
+      "id": "12ae5d4a-b8e1-4cda-8db1-04367a4a15f1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=${command}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f3fd520-8420-4d0a-9916-d6f3d6bd0e3f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=container",
+      "targets": [
+        ["id=container", "id"],
+        ["css=#container", "css:finder"],
+        ["xpath=//div[@id='container']", "xpath:attributes"],
+        ["xpath=//div", "xpath:position"]
+      ],
+      "value": "300000"
+    }, {
+      "id": "b45fa111-6149-43c7-85da-ad67533a2939",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=container",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35f704a8-7f40-4bfa-9028-a0a33381852e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.field > a",
+      "targets": [
+        ["linkText=Serge Demeyer", "linkText"],
+        ["css=.field > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Serge Demeyer')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ansymore.uantwerpen.be/people/serge-demeyer')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Serge Demeyer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0293046e-9588-4588-a2fa-33b642282736",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "ef5ab0b4-c478-48ed-9064-afbf5eba8fc0",
@@ -166,7 +292,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["f766be4b-45ed-4d5d-835a-60bdaea6421d"]
+    "tests": ["f766be4b-45ed-4d5d-835a-60bdaea6421d", "65b2bebb-c271-45ba-9b6c-a64b009948e3"]
   }],
   "urls": ["https://ansymore.uantwerpen.be/"],
   "plugins": []
